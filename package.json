@@ -1,15 +1,15 @@
 {
-  "name": "xp-suspension-bot",
+  "name": "voice-restriction-bot",
   "version": "1.0.0",
+  "description": "Discord bot that stops restricted members from sharing a voice channel",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "node --env-file=.env index.js"
+    "deploy": "node deploy-commands.js"
   },
+  "engines": { "node": ">=18" },
   "dependencies": {
-    "discord.js": "^14.16.0"
-  },
-  "engines": {
-    "node": ">=20.6"
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
   }
 }
